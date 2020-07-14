@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Muli', sans-serif;
+  color: #FFFFFF;
 }
 
 a {
@@ -13,6 +14,73 @@ a {
 .container {
   max-width: 1110px;
   margin: auto;
+}
+
+.header {
+  background-color: #FFFFFF;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.search__input {
+  width: 350px;
+  height: 100%;
+  padding: 12px 75px 12px 23px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+  background-color: #F5FAFE;
+  border: none;
+}
+
+.search__input:focus {
+  outline: 0;
+}
+
+.search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 100%;
+  background-color: #EC1F46;
+  border: none;
+}
+
+.search-header {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user__name {
+  margin-left: 18px;
+  color: #333333;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
