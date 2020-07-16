@@ -5,7 +5,10 @@
     align-items: center
     justify-content: space-between
     padding: 40px 0
-
+.logo
+  width: 177px
+  &__img
+    width: 100%
 .search
   display: flex
   position: relative
@@ -29,10 +32,10 @@
     right: 0
     width: 65px
     height: 100%
-    background-color: $second-color
+    background-color: $main-red
     border: none
     cursor: pointer
-
+  
 .search-header
   margin-right: auto
   margin-left: 108px
@@ -49,3 +52,20 @@
   &__name
     margin-left: 18px
     color: $text-color  
+.header__nav-button
+  display: none
+  padding: 0
+  margin: 0
+
+.navigation
+  background-color: $main-dark 
+  &-menu
+    display: flex
+    padding: 31px 0
+    justify-content: space-between
+    text-align: center
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+    text-transform: uppercase
+
