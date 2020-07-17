@@ -20,7 +20,7 @@
       padding: 22px 0
       font-size: 12px
 
-@media (max-width: 768px) 
+@media (max-width: 767px) 
   .container
     max-width: 90%
   .search, .navigation, .user
@@ -38,6 +38,18 @@
       width: 30px
       height: 1px
       background-color: $text-color
+  .hotel-info
+    &__stars
+      flex-basis: auto
+      margin-left: auto
+      align-self: center
+    &__title   
+      flex-basis: 100% 
+    &__offer
+      order: -1
+      margin: 0 0 10px 0  
+  .rating
+    display: none
 
 @media (max-width: 480px)      
   .header
@@ -51,3 +63,5 @@
     &__line
       width: 16px
       height: 1px
+  .hotel-info
+    padding-top: 5px

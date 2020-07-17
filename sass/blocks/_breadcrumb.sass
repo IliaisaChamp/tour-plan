@@ -1,0 +1,16 @@
+.breadcrumb
+  &-list
+    display: flex
+    padding: 18px 0
+    &__item
+      &:not(:last-child)
+        &::after
+          content: '/'
+          margin-right: 4px
+          color: $text-color
+          font-size: 10px
+          line-height: 13px
+    &__link
+      color: $text-color
+      font-size: 10px
+      line-height: 13px
