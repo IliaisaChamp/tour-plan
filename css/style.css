@@ -267,6 +267,7 @@ ul {
   .hotel-info__stars {
     flex-basis: auto;
     margin-left: auto;
+    margin-bottom: 14px;
     align-self: center;
   }
   .hotel-info__title {
