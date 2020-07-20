@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -132,9 +133,41 @@
           </div>
         </div>
         <!-- /.hotel-info -->
+
+        <!-- СЛАЙДЕР -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="swiper-slide__img" src="images/slider-1.jpg" alt="img: Grand Hilton Hotel">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide__img" src="images/slider-2.jpg" alt="img: Grand Hilton Hotel">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide__img" src="images/slider-3.jpg" alt="img: Grand Hilton Hotel">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide__img" src="images/slider-4.jpg" alt="img: Grand Hilton Hotel">
+            </div>
+            <div class="swiper-slide">
+              <img class="swiper-slide__img" src="images/slider-5.jpg" alt="img: Grand Hilton Hotel">
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <button class="slider-button slider-button--prev"></button>
+          <button class="slider-button slider-button--next"></button>
+        </div>
+        <!-- /.swiper-container -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

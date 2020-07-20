@@ -140,6 +140,10 @@ ul {
   line-height: 13px;
 }
 
+.hotel {
+  padding-bottom: 70px;
+}
+
 .hotel-info {
   padding-top: 24px;
   padding-bottom: 20px;
@@ -212,6 +216,58 @@ ul {
   font-size: 14px;
   line-height: 18px;
   font-weight: 700;
+}
+
+.swiper-container {
+  position: relative;
+  max-width: 728px;
+  height: 450px;
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 8px;
+}
+
+.swiper-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.swiper-slide__img {
+  width: 100%;
+}
+
+.slider-button {
+  z-index: 999;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-button--next {
+  right: 18px;
+  background-image: url(../images/chevron-next.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../images/chevron-prev.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1200px) {
