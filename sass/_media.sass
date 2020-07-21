@@ -2,7 +2,7 @@
   .container
     max-width: 960px
   .swiper-container
-    max-width: 600px
+    max-width: 580px
 
 @media (max-width: 992px)
   .container
@@ -34,9 +34,7 @@
     width: 340px
     &-map
       width: 340px
-      height: 210px
-    &__button
-      padding: 13px 78px  
+      height: 210px   
   
 @media (max-width: 767px) 
   .container
@@ -68,7 +66,29 @@
       order: -1
       margin: 0 0 10px 0  
   .rating
-    display: none
+    display: none 
+  .booking
+    width: 340px
+    margin-bottom: 20px
+    margin-right: 20px
+    &__button
+      width: 100%
+    &-map
+      width: 340px
+  .swiper-container
+    margin-bottom: 20px
+
+@media (max-width: 600px) 
+  .hotel-booking
+    flex-direction: column 
+  .booking
+    width: 100%
+    margin-right: 0px
+    &__button
+      width: 100%    
+    &-map
+      width: 100%
+      // height: 174px
 
 @media (max-width: 480px)      
   .header
@@ -92,14 +112,14 @@
     max-width: 100%
     height: 179px
     margin-bottom: 20px
-  .hotel-booking
-    flex-direction: column
-  .booking
-    width: 100%
-    margin-bottom: 20px
-    &__button
-      width: 100%
-    &-map
-      width: 100%
-      height: 174px
+  // .hotel-booking
+  //   flex-direction: column
+  // .booking
+  //   width: 100%
+  //   margin-bottom: 20px
+  //   &__button
+  //     width: 100%
+  //   &-map
+  //     width: 100%
+  //     height: 174px
    

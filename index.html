@@ -9,11 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=16cee59f-7797-47a5-87d8-33e4cc920de1&lang=ru_RU">
+    </script>
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=16cee59f-7797-47a5-87d8-33e4cc920de1&lang=ru_RU" type="text/javascript">
-    </script>
-    <script src="js/ymap.js"></script>
   </head>
 
   <body>
@@ -39,7 +40,7 @@
                 class="search__img"
                 src="images/search.svg"
                 alt="Icon: search"
-              />
+              /> 
             </button>
           </form>
 
@@ -230,9 +231,7 @@
               <button class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="booking-map" id="map">
-              
-            </div>
+            <div class="booking-map" id="map"></div>
           </div>
           <!-- /.hotel-booking -->
         </div>
@@ -241,7 +240,8 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-
+    
+    <script src="js/ymap.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="js/main.js"></script>
   </body>
