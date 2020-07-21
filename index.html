@@ -11,6 +11,9 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=16cee59f-7797-47a5-87d8-33e4cc920de1&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="js/ymap.js"></script>
   </head>
 
   <body>
@@ -227,17 +230,8 @@
               <button class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="booking-map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3378.3890119705593!2d-80.76139808495886!3d32.139799123508986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc791b7607191b%3A0x98f2b586ea9394e7!2sGrand%20Hilton%20Head%20Inn%2C%20Ascend%20Hotel%20Collection!5e0!3m2!1sru!2sru!4v1595327311511!5m2!1sru!2sru"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                style="border: 0;"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              ></iframe>
+            <div class="booking-map" id="map">
+              
             </div>
           </div>
           <!-- /.hotel-booking -->
