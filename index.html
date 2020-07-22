@@ -8,9 +8,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
-    /> 
-    
-    
+    />
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -38,7 +37,7 @@
                 class="search__img"
                 src="images/search.svg"
                 alt="Icon: search"
-              /> 
+              />
             </button>
           </form>
 
@@ -229,7 +228,18 @@
               <button class="booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="booking-map" id="map"></div>
+            <div class="booking-map" id="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6797.139127571386!2d79.79924981923662!3d7.574980549671371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1595357827601!5m2!1sru!2sru"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
           </div>
           <!-- /.hotel-booking -->
         </div>
@@ -238,10 +248,25 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
-    
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=16cee59f-7797-47a5-87d8-33e4cc920de1&lang=ru_RU">
-    </script>
-    <script src="js/ymap.js"></script>
+
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <h2 class="newsletter__title">subscribe to our
+          <span class="newsletter__title--strong">Newsletter</span>
+        </h2>
+        <form action="#" class="newsletter__form">
+          <input
+            class="newsletter__input"
+            type="text"
+            placeholder="Your email address"
+          />
+          <button class="newsletter__button">Send</button>
+        </form>
+      </div> 
+      <!-- /.newsletter-container -->
+    </sectio>
+    <!-- /.newsletter -->
+   
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="js/main.js"></script>
   </body>

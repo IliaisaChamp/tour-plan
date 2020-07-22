@@ -397,6 +397,91 @@ ul {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url(../images/newslatter-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.newsletter:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 735px;
+  margin: 0 auto;
+  z-index: 99;
+}
+
+.newsletter__title {
+  max-width: 245px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.newsletter__title--strong {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.newsletter__form {
+  display: flex;
+  position: relative;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.newsletter__input {
+  width: 350px;
+  height: 100%;
+  padding: 12px 75px 12px 23px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  background-color: #F5FAFE;
+  border: none;
+}
+
+.newsletter__input:focus {
+  outline: 0;
+}
+
+.newsletter__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 65px;
+  height: 100%;
+  color: #f5fafe;
+  background-color: #EC1F46;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -443,6 +528,9 @@ ul {
   .booking-map {
     width: 340px;
     height: 210px;
+  }
+  .newsletter__container {
+    max-width: 700px;
   }
 }
 
@@ -498,6 +586,12 @@ ul {
   .swiper-container {
     margin-bottom: 20px;
   }
+  .newsletter {
+    padding: 92px 0 93px 0;
+  }
+  .newsletter__container {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -513,6 +607,26 @@ ul {
   }
   .booking-map {
     width: 100%;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter__title--strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newsletter__input {
+    width: 280px;
   }
 }
 
