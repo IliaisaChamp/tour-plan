@@ -1,0 +1,92 @@
+.review
+  background-color: $color
+  padding: 40px 0 70px 0
+  &__title
+    text-align: center
+    color: $text-color
+    text-transform: uppercase
+    margin: 0
+    margin-bottom: 70px
+  &-slider
+    &__item
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 737px
+      background-color: #ffffff
+      background-repeat: 8px
+      margin: 45px auto  0
+      padding: 0 62px 30px
+      &::before
+        content: ''
+        width: 70px
+        height: 47px
+        top: 13px
+        left: 62px 
+        position: absolute
+        background-image: url(../images/quote-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        width: 70px
+        height: 47px
+        top: 118px
+        right: 62px 
+        position: absolute
+        background-image: url(../images/quote-right.svg)
+        background-repeat: no-repeat    
+    &__profile
+      display: flex
+      align-items: center
+      flex-direction: column
+      text-align: center    
+    &__user
+      margin-bottom: 9px
+      width: 90px
+      margin-top: -45px 
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+    &__title
+      margin: 0
+      margin-bottom: 10px
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $main-red
+    &__desc
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      color: $text-color
+    &__stars
+      margin-bottom: 33px
+    &__text
+      margin: 0
+      max-width: 537px
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      color: $text-color
+    &__button
+      z-index: 999
+      position: absolute
+      width: 30px
+      height: 30px
+      top: 50%
+      transform: translateY(-50%)
+      background-color: transparent
+      border: none
+      cursor: pointer
+      &--next
+        right: 18px
+        background-image: url(../images/arrow-next.svg)
+        background-position: center
+        background-repeat: no-repeat
+      &--prev
+        left: 18px
+        background-image: url(../images/arrow-prev.svg)
+        background-position: center
+        background-repeat: no-repeat

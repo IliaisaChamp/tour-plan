@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -13,42 +13,21 @@ var mySwiper = new Swiper('.swiper-container', {
   keyboard: {
     enabled: true,
   },
-})
+});
 
-// var myMap;
+var mySwiper2 = new Swiper('.review-slider', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-// // Дождёмся загрузки API и готовности DOM.
-// ymaps.ready(init);
+  // Navigation arrows
+  navigation: {
+    nextEl: '.review-slider__button--next',
+    prevEl: '.review-slider__button--prev',
+  },
 
-// function init() {
-//   // Создание экземпляра карты и его привязка к контейнеру с
-//   // заданным id ("map").
-//   myMap = new ymaps.Map('map', {
-//       // При инициализации карты обязательно нужно указать
-//       // её центр и коэффициент масштабирования.
-//       center: [41.058629, 28.978826], // Москва
-//       zoom: 15
-//     }, {
-//       searchControlProvider: 'yandex#search'
-//     }),
-
-//     myGeoObject = new ymaps.GeoObject({
-//       // Описание геометрии.
-//       geometry: {
-//         type: "Point",
-//         coordinates: [41.058629, 28.978826]
-//       },
-//     }),
-
-//     myMap.geoObjects
-//     .add(myGeoObject)
-//     .add(new ymaps.Placemark([41.058629, 28.978826], {
-//       iconColor: 'yellow'
-//     }))
-
-//   document.getElementById('destroyButton').onclick = function () {
-//     // Для уничтожения используется метод destroy.
-//     myMap.destroy();
-//   };
-
-// }
+  // keyboard control
+  keyboard: {
+    enabled: true,
+  },
+});
