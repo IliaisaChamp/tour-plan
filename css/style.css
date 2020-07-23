@@ -600,6 +600,89 @@ ul {
   background-repeat: no-repeat;
 }
 
+.activities {
+  padding: 60px 0 98px 0;
+  background-color: #f5fafe;
+}
+
+.activities__title {
+  margin-bottom: 57px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.activities-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px;
+}
+
+.card::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: 1;
+}
+
+.card__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.card__button {
+  max-width: 100px;
+  min-height: 30px;
+  padding: 7px 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  border: none;
+  z-index: 2;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -609,6 +692,10 @@ ul {
   }
   .review-slider {
     max-width: 960px !important;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -655,6 +742,13 @@ ul {
   }
   .review-slider__item {
     max-width: 560px;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
 }
 
@@ -744,6 +838,10 @@ ul {
     margin-right: -85px;
     transform: translate(50%, 0);
   }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -788,6 +886,10 @@ ul {
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
   }
 }
 
