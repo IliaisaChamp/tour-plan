@@ -606,6 +606,7 @@ ul {
 }
 
 .activities__title {
+  margin: 0;
   margin-bottom: 57px;
   font-style: normal;
   font-weight: bold;
@@ -838,6 +839,9 @@ ul {
     margin-right: -85px;
     transform: translate(50%, 0);
   }
+  .activities {
+    padding: 40px 0 70px 0;
+  }
   .card {
     width: 49%;
     height: 255px;
@@ -884,6 +888,14 @@ ul {
   .review__title {
     text-align: center;
     font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .activities {
+    padding: 40px 0 60px 0;
+  }
+  .activities__title {
+    margin-bottom: 36px;
     font-size: 18px;
     line-height: 23px;
   }
