@@ -54,6 +54,10 @@
   .card
     width: 340px
     height: 255px      
+  .packages
+    &-grid
+      grid-template-rows: 1fr 1fr 1ft
+      grid-template-columns: 1fr 1fr
 
 @media (max-width: 767px) 
   .container
@@ -135,7 +139,13 @@
     padding: 40px 0 70px 0
   .card
     width: 49%
-    height: 255px    
+    height: 255px 
+  .packages
+    padding: 0 0 70px 0
+    &__title
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 50px
 
 @media (max-width: 600px) 
   .hotel-booking
@@ -179,7 +189,18 @@
   .card
     width: 100%
     height: 255px 
-    
+  .packages
+    &-grid
+      grid-auto-flow: column
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+      grid-template-columns: 1fr
+      justify-items: center
+      column-gap: 0
+    &__title
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 36px
+
 @media (max-width: 480px)      
   .header
     &-top
@@ -209,5 +230,7 @@
     &-slider
       &__item
         padding-bottom: 36px
-      
+  .packages
+    &-grid
+      row-gap: 5px    
       
