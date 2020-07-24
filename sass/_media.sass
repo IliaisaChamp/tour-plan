@@ -142,6 +142,18 @@
     height: 255px 
   .packages
     padding: 0 0 70px 0
+    &-grid
+      grid-template-rows: 1fr
+      &__img          
+        &--big
+          height: 250px
+          max-width: 100% 
+      &__item  
+        &--big
+          grid-auto-flow: row 
+      &__info
+        &--big
+          max-width: 100%
     &__title
       font-size: 24px
       line-height: 30px
@@ -192,14 +204,18 @@
   .packages
     &-grid
       grid-auto-flow: column
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr 1fr
       grid-template-columns: 1fr
-      justify-items: center
       column-gap: 0
+      &__item
+        &--big
+          grid-column-start: 1;
+          grid-row-end: 1;
     &__title
       font-size: 24px
       line-height: 30px
       margin-bottom: 36px
+        
 
 @media (max-width: 480px)      
   .header
@@ -232,5 +248,5 @@
         padding-bottom: 36px
   .packages
     &-grid
-      row-gap: 5px    
+      row-gap: 20px    
       
