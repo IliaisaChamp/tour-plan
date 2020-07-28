@@ -989,6 +989,35 @@ ul {
   line-height: 15px;
 }
 
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  padding-top: 95px;
+  max-width: 696px;
+}
+
+.footer__bottom-disclamer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 283px;
+  width: 100%;
+}
+
+.footer__bottom-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.footer__payment {
+  max-width: 136px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
