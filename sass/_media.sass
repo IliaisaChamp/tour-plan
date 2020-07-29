@@ -92,10 +92,52 @@
       flex-basis: 48%
 
 @media (max-width: 767px) 
+  body
+    padding-top: 78px  
+  .header
+    &--fixed
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 99
   .container
-    max-width: 90%
-  .search, .navigation, .user
+    max-width: 90%   
+  .search-header
+    &--hidden
+      display: none
+    &--visible
+      display: inline-block 
+  .user
+    &--hidden
+      display: none
+    &--visible
+      display: flex
+      flex-direction: column
+      justify-content: center
+    &__name
+      color: #ffffff
+      margin-top: 10px
+      margin-left: 0
+      text-transform: capitalize
+      font-weight: normal       
+  .navigation
     display: none
+    &--visible
+      display: block
+      position: fixed
+      top: 78px
+      left: 0
+      right: 0
+      bottom: 0
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--hidden
+          display: block  
+      &__link
+        display: block 
   .nav-button
     display: flex
     width: 25px

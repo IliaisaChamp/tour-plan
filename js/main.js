@@ -31,3 +31,12 @@ var mySwiper2 = new Swiper('.review-slider', {
     enabled: true,
   },
 });
+
+var navButton = document.querySelector('.nav-button');
+
+navButton.addEventListener('click', function() {
+  console.log("Нажал")
+  document
+    .querySelector('.navigation')
+    .classList.toggle('navigation--visible')
+});
