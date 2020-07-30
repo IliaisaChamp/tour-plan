@@ -564,11 +564,12 @@
           subscribe to our
           <span class="newsletter__title--strong">Newsletter</span>
         </h2>
-        <form action="#" class="newsletter__form">
+        <form action="send.php" method="POST" class="newsletter__form">
           <input
             class="newsletter__input"
             type="text"
             placeholder="Your email address"
+            name="email"
           />
           <button class="newsletter__button">Send</button>
         </form>
@@ -908,20 +909,23 @@
 
           <div class="footer__contacts-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form" name='footer-form'>
               <input
                 type="text"
                 class="footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__textarea"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>

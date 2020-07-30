@@ -40,3 +40,4 @@ navButton.addEventListener('click', function() {
     .querySelector('.navigation')
     .classList.toggle('navigation--visible')
 });
+
