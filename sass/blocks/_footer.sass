@@ -6,7 +6,8 @@
     justify-content: space-between;
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-auto-rows: minmax(94px, min-content)
-    grid-gap: 20px
+    grid-row-gap: 20px
+    grid-column-gap: 55px
   &__logo
     grid-row: 1 / 3
     width: 166px
@@ -21,11 +22,12 @@
       display: flex
       justify-content: space-between
       align-items: start
-      max-width: 310px
-    &-title
-      margin-right: 43px !important
-    &-icon
-      margin-right: 12px    
+      max-width: 300px
+    &-wrapper
+      max-width: 90px
+      width: 100%
+      display: flex
+      justify-content: space-between      
   &__contact-details
     grid-row: 3 / 4 
     grid-column: 1 / span 2
