@@ -139,6 +139,8 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
+  </body>
+
 
     <section class="hotel">
       <div class="container">
@@ -159,12 +161,14 @@
             >
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div class="rating hotel-info__rating" data-toggle="modal">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
         </div>
         <!-- /.hotel-info -->
+        
+        
 
         <div class="hotel-grid">
           <!-- СЛАЙДЕР -->
@@ -751,6 +755,8 @@
     </section>
     <!-- /.activities -->
 
+    
+
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
@@ -952,7 +958,46 @@
       <!-- /.container -->
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div class="modal">
+      <div class="modal__overlay">
+          <div class="modal__block">
+            <img src="images/close.svg" alt="Icon: close" class="modal__close">
+            <h3 class="modal__title">Feedback</h3>
+            <form action="send.php" method="POST" class="modal__form" name='modal-form'>
+              <input
+                type="text"
+                class="modal__input"
+                placeholder="Your Full Name*"
+                name="name"
+              />
+              <input
+                type="text"
+                class="modal__input"
+                placeholder="Phone Number*"
+                name="phone"
+              />
+              <input
+                type="text"
+                class="modal__input"
+                placeholder="Email*"
+                name="email"
+              />
+              <textarea
+                class="modal__textarea"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+              <button class="modal__button">Send</button>
+              <span class="modal__info">* Required Fields</span>
+            </form>  
+          </div>
+         <!-- /.modal__block -->    
+      </div>
+       <!-- /.modal__overlay -->
+    </div>
+    <!-- /.modal -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/main.js"></script>

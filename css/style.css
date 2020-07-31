@@ -593,7 +593,7 @@ ul {
   justify-content: space-between;
   max-width: 735px;
   margin: 0 auto;
-  z-index: 99;
+  z-index: 98;
 }
 
 .newsletter__title {
@@ -1038,6 +1038,117 @@ ul {
   max-width: 136px;
 }
 
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.modal--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 101;
+}
+
+.modal__block {
+  position: fixed;
+  max-width: 478px;
+  width: 100%;
+  height: 487px;
+  top: 50%;
+  left: 50%;
+  padding: 33px 88px;
+  transform: translate(-50%, -50%);
+  background-color: #0A223D;
+  color: #ffffff;
+  border-radius: 8px;
+  z-index: 102;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  cursor: pointer;
+}
+
+.modal__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.modal__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.modal__input {
+  padding: 17px 23px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.modal__input::placeholder {
+  color: #BDBDBD;
+}
+
+.modal__textarea {
+  width: 100%;
+  height: 123px;
+  padding: 18px 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  resize: none;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.modal__textarea::placeholder {
+  color: #BDBDBD;
+}
+
+.modal__button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  color: #ffffff;
+  flex-shrink: 1;
+  cursor: pointer;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1436,6 +1547,13 @@ ul {
   }
   .footer__social-network {
     flex-direction: column;
+  }
+  .modal__block {
+    max-width: 80%;
+    padding: 30px 14%;
+  }
+  .modal__button {
+    width: 100%;
   }
 }
 

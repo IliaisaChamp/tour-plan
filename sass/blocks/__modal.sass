@@ -1,0 +1,85 @@
+.modal
+  visibility: hidden
+  opacity: 0
+  transition: opacity 0.2s
+  &--visible
+    visibility: visible
+    opacity: 1
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 101
+  &__block
+    position: fixed
+    max-width: 478px
+    width: 100%
+    height: 487px
+    top: 50%    
+    left: 50%
+    padding: 33px 88px
+    transform: translate(-50%, -50%)
+    background-color: $main-dark
+    color: #ffffff
+    border-radius: 8px
+    z-index: 102
+  &__close
+    position: absolute
+    top: 17px 
+    right: 18px
+    cursor: pointer
+  &__form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: center
+  &__title
+    text-align: center
+    text-transform: uppercase
+    margin: 0
+    margin-bottom: 15px
+  &__input
+    padding: 17px 23px
+    width: 100%
+    height: 50px
+    border: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    border-radius: 4px
+    margin-bottom: 15px
+    color: #000000
+    &::placeholder
+      color: #BDBDBD
+  &__textarea
+    width: 100%
+    height: 123px
+    padding: 18px 23px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    resize: none
+    color: #000000
+    margin-bottom: 15px
+    &::placeholder
+      color: #BDBDBD  
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    border: none
+    background-color: $main-red
+    border-radius: 4px
+    color: #ffffff
+    flex-shrink: 1
+    cursor: pointer
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
