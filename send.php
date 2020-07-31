@@ -17,8 +17,8 @@ $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br>
-<b>Почта:</> $email<br><br>
+<b>Телефон:</b> $phone<br> 
+<b>Почта:</> $email<br><br> 
 <b>Сообщение:</b><br>$message
 ";
 
@@ -57,4 +57,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thanks.php');

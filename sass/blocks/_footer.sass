@@ -6,8 +6,7 @@
     justify-content: space-between;
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-auto-rows: minmax(94px, min-content)
-    grid-row-gap: 20px
-    grid-column-gap: 55px
+    grid-gap: 20px
   &__logo
     grid-row: 1 / 3
     width: 166px
@@ -77,7 +76,9 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: #BDBDBD
+    color: #000000
+    &::placeholder
+      color: #BDBDBD
   &__textarea
     height: 123px
     flex-basis: 100%
@@ -90,7 +91,9 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    color: #BDBDBD
+    color: #000000
+    &::placeholder
+      color: #BDBDBD
   &__icon  
     &-wrapper
       min-width: 40px
