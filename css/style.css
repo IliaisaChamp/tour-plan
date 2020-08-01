@@ -1554,11 +1554,15 @@ ul {
     flex-direction: column;
   }
   .modal__block {
-    max-width: 80%;
-    padding: 30px 14%;
+    max-width: 90%;
+    padding: 30px 8%;
   }
   .modal__button {
     width: 100%;
+    order: 1;
+  }
+  .modal__info {
+    margin-bottom: 10px;
   }
 }
 
@@ -1612,6 +1616,7 @@ ul {
   }
   .modal__info {
     font-size: 10px;
+    margin-bottom: 10px;
   }
 }
 
