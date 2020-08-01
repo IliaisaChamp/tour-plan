@@ -1,4 +1,4 @@
-console.log("работает")
+
 $(document).ready(function () {
   var mySwiper = new Swiper('.hotel-slider', {
     // Optional parameters
@@ -37,14 +37,13 @@ $(document).ready(function () {
   var navButton = document.querySelector('.nav-button');
 
   navButton.addEventListener('click', function () {
-    console.log("Нажал")
     document
       .querySelector('.navigation')
       .classList.toggle('navigation--visible')
   });
 
 
-  var modalButton = $(".rating");
+  var modalButton = $(".modal__button");
   var modalCloseButton = $('.modal__close')
   modalButton.on('click', openModal )
   modalCloseButton.on('click', closeModal)
