@@ -73,8 +73,9 @@ $(document).ready(function () {
         name: "required",
         email: {
           required: true,
-          email: true
-        }
+          email: true,
+        },
+
       },
       messages: {
         name: "Please specify your name",
@@ -82,7 +83,7 @@ $(document).ready(function () {
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com"
-        }
+        },       
       }
     });
   });
@@ -92,5 +93,5 @@ $(document).ready(function () {
     $('.phone').mask('+7 (000) 000-00-00');
   });
 
-
+ 
 });

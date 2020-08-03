@@ -24,8 +24,35 @@ ul {
   margin: auto;
 }
 
-.formerror {
-  color: #EC1F46;
+label {
+  position: absolute;
+  content: '';
+  top: 51px;
+  left: 0;
+  color: #ff0000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.modal__form label[id="name-error"] {
+  position: absolute;
+  content: '';
+  top: 70px;
+  left: 0;
+}
+
+.modal__form label[id="phone-error"] {
+  position: absolute;
+  content: '';
+  top: 140px;
+  left: 0;
+}
+
+.modal__form label[id="email-error"] {
+  position: absolute;
+  content: '';
+  top: 213px;
+  left: 0;
 }
 
 .header {
@@ -974,13 +1001,14 @@ ul {
 
 .footer__input-wrapper {
   flex-basis: 48%;
+  position: relative;
 }
 
 .footer__textarea {
   height: 123px;
   flex-basis: 100%;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 22px;
   resize: none;
   padding: 18px 23px;
   border-radius: 4px;
@@ -1091,6 +1119,7 @@ ul {
 }
 
 .modal__form {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1113,7 +1142,7 @@ ul {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
   border-radius: 4px;
   color: #000000;
 }
@@ -1133,7 +1162,7 @@ ul {
   resize: none;
   color: #000000;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
   border-radius: 4px;
 }
 
@@ -1626,6 +1655,34 @@ ul {
   .modal__info {
     font-size: 10px;
     margin-bottom: 10px;
+  }
+  label {
+    position: absolute;
+    content: '';
+    top: 51px;
+    left: 0;
+    color: #ff0000;
+    color: #EC1F46;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .modal__form label[id="name-error"] {
+    position: absolute;
+    content: '';
+    top: 56px;
+    left: 0;
+  }
+  .modal__form label[id="phone-error"] {
+    position: absolute;
+    content: '';
+    top: 110px;
+    left: 0;
+  }
+  .modal__form label[id="email-error"] {
+    position: absolute;
+    content: '';
+    top: 163px;
+    left: 0;
   }
 }
 
