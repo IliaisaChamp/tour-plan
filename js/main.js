@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   var mySwiper = new Swiper('.hotel-slider', {
     // Optional parameters
@@ -45,7 +44,7 @@ $(document).ready(function () {
 
   var modalButton = $(".modal__button");
   var modalCloseButton = $('.modal__close')
-  modalButton.on('click', openModal )
+  modalButton.on('click', openModal)
   modalCloseButton.on('click', closeModal)
 
 
@@ -58,11 +57,40 @@ $(document).ready(function () {
     var modal = $('.modal');
     modal.removeClass('modal--visible')
   }
-  
-  $(document).keyup(function(e) {
+
+  $(document).keyup(function (e) {
     if (e.key === "Escape" || e.keyCode === 27) {
       closeModal()
     }
   });
-  
+
+  // Валидация форм
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "formerror",
+      rules: {
+        name: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Please specify your name",
+        phone: "Please specify your phone",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
+      }
+    });
+  });
+
+  // Маска 
+  $('.form').each(function(){
+    $('.phone').mask('+7 (000) 000-00-00');
+  });
+
+
 });
