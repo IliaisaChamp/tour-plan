@@ -27,7 +27,7 @@ ul {
 label {
   position: absolute;
   content: '';
-  top: 51px;
+  top: 53px;
   left: 0;
   color: #ff0000;
   font-size: 12px;
@@ -37,21 +37,21 @@ label {
 .modal__form label[id="name-error"] {
   position: absolute;
   content: '';
-  top: 70px;
+  top: 72px;
   left: 0;
 }
 
 .modal__form label[id="phone-error"] {
   position: absolute;
   content: '';
-  top: 140px;
+  top: 142px;
   left: 0;
 }
 
 .modal__form label[id="email-error"] {
   position: absolute;
   content: '';
-  top: 213px;
+  top: 215px;
   left: 0;
 }
 
@@ -1162,7 +1162,7 @@ label {
   resize: none;
   color: #000000;
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 35px;
   border-radius: 4px;
 }
 
@@ -1651,6 +1651,7 @@ label {
   }
   .modal__textarea {
     height: 80px;
+    margin-top: 25px;
   }
   .modal__info {
     font-size: 10px;
@@ -1663,25 +1664,25 @@ label {
     left: 0;
     color: #ff0000;
     color: #EC1F46;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: bold;
   }
   .modal__form label[id="name-error"] {
     position: absolute;
     content: '';
-    top: 56px;
+    top: 58px;
     left: 0;
   }
   .modal__form label[id="phone-error"] {
     position: absolute;
     content: '';
-    top: 110px;
+    top: 112px;
     left: 0;
   }
   .modal__form label[id="email-error"] {
     position: absolute;
     content: '';
-    top: 163px;
+    top: 165px;
     left: 0;
   }
 }
