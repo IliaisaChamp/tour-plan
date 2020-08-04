@@ -42,7 +42,7 @@ $(document).ready(function () {
   });
 
 
-  var modalButton = $(".modal__button");
+  var modalButton = $(".modal-button");
   var modalCloseButton = $('.modal__close')
   modalButton.on('click', openModal)
   modalCloseButton.on('click', closeModal)
@@ -93,5 +93,6 @@ $(document).ready(function () {
     $('.phone').mask('+7 (000) 000-00-00');
   });
 
- 
+  AOS.init();
+
 });
