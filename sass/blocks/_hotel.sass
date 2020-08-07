@@ -4,7 +4,7 @@
     display: flex
     justify-content: space-between
 .hotel-info
-  padding-top: 24px
+  padding-top: 17px
   padding-bottom: 20px
   display: flex
   justify-content: space-between
@@ -16,6 +16,7 @@
     color: $text-color 
   &__stars
     flex-basis: 100%
+    margin-bottom: 4px
   &__star
     width: 6px
     height: 6px
@@ -26,7 +27,7 @@
     font-weight: 700
     text-transform: uppercase
   &__offer
-    margin-left: 23px 
+    margin-left: 14px 
     padding: 4px 9px
     font-weight: 600
     font-size: 10px
@@ -38,6 +39,7 @@
     flex-basis: 100%
     font-size: 12px
     line-height: 15px
+    letter-spacing: 0.2px
    
 .rating
   padding: 7px 7px
@@ -84,7 +86,7 @@
     height: 100%
     object-fit: cover
 .slider-button
-  z-index: 999
+  z-index: 1
   position: absolute
   width: 30px
   height: 30px
@@ -177,13 +179,14 @@
     mix-width: 295px
     width: 100%
     padding: 13px 15px
-    font-weight: 600
+    font-weight: 400
     font-size: 14px
     line-height: 19px
     color: $color
     background-color: $main-red
     border-radius: 4px
     border: none
+    font-family: 'Nunito', sans-serif
 
   &-map
     width: 347px

@@ -22,7 +22,7 @@
   overflow: hidden
   display: flex
   flex-direction: column
-  padding: 24px 26px
+  padding: 24px 21px 24px 26px
   &::after
     position: absolute
     content: ''
@@ -52,12 +52,14 @@
     line-height: 20px
     color: #ffffff
     z-index: 2
+    &:nth-child(3)
+      width: 160px     
   &__button
     max-width: 100px
-    min-height: 30px
+    min-height: 30px !important
     padding: 7px 15px
     font-style: normal
-    font-weight: 600
+    font-weight: 400
     font-size: 12px
     line-height: 16px
     color: #ffffff

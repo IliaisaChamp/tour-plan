@@ -16,11 +16,11 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
-      rel="stylesheet"
+      rel="preload" as="font"
     />
 
     <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="css/aos.css" >
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -28,7 +28,10 @@
     <header class="header header--fixed">
       <div class="container">
         <div class="header-top">
-          <a class="logo" href="https://www.ilia-voloshin.ru/homeworks/tour-plan/index.html">
+          <a
+            class="logo"
+            href="https://www.ilia-voloshin.ru/homeworks/tour-plan/index.html"
+          >
             <img
               class="logo__img"
               src="images/logo-horizontal.svg"
@@ -171,11 +174,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            class="footer__logo"
-            src="images/logo-vertical.svg"
-            alt="Img: Best tour plan"
-          />
+          <a href="/index.html" class="footer__logo">
+            <img
+              class="footer__logo-img"
+              src="images/logo-vertical.svg"
+              alt="Img: Best tour plan"
+          /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -387,12 +391,14 @@
       <!-- /.container -->
     </footer>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
