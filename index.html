@@ -71,7 +71,7 @@
         <!-- /.header-top -->
       </div>
       <!-- /.container -->
-      <nav class="navigation">
+      <nav id="navvisible" class="navigation">
         <div class="container container__menu">
           <ul class="navigation-menu">
             <li class="navigation-menu__item navigation-menu__item--hidden">
@@ -272,8 +272,10 @@
               </button>
             </div>
             <!-- /.booking -->
-            <div class="booking-map" id="map">
-              <iframe class="google-map lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6797.139127571386!2d79.79924981923662!3d7.574980549671371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1595357827601!5m2!1sru!2sru"               
+            <div class="booking-map" id="mapContainer">
+              <iframe
+                class="google-map lazy"
+                id="map"
                 style="border: 0;"
                 aria-hidden="false"
               ></iframe>
@@ -363,7 +365,7 @@
           <!-- /.packages-grid__item -->
 
           <div
-            class="packages-grid__item"
+            class="packages-grid__item "
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -375,7 +377,7 @@
             <span class="packages-grid__offer packages-grid__offer--big"
               >Flash Offer</span
             >
-            <div class="packages-grid__info">
+            <div class="packages-grid__info ">
               <h3 class="packages-grid__title">LUX* Belle Mare</h3>
 
               <div class="grid-room">
@@ -794,7 +796,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="/index.html" class="footer__logo">
+          <a href="https://www.ilia-voloshin.ru/homeworks/tour-plan" class="footer__logo">
             <img
               class="footer__logo-img"
               src="images/logo-vertical.svg"
@@ -1092,7 +1094,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.plugins.min.js"></script>  -->
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

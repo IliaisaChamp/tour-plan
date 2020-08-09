@@ -95,6 +95,7 @@
   background-color: transparent
   border: none
   cursor: pointer
+  outline: none
   &--next
     right: 18px
     background-image: url(../images/chevron-next.svg)
@@ -147,7 +148,6 @@
       font-weight: 600
       font-size: 18px
       line-height: 25px
-
   &__person-room
     display: flex
     flex-direction: column
@@ -187,9 +187,17 @@
     border-radius: 4px
     border: none
     font-family: 'Nunito', sans-serif
-
   &-map
     width: 347px
     height: 213px
     border-radius: 10px
     overflow: hidden
+    background-image: url(../images/cover.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    z-index: 98
+.google-map
+  width: 100%
+  z-index: 1
+  position: relative
