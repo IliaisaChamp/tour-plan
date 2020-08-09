@@ -73,8 +73,8 @@ $(document).ready(function () {
     body.style.top = `-${scrollY}`;
   }
 
-  function closeModal() {
-
+  function closeModal(event) {
+    event.preventDefault();
     const body = document.body;
     const scrollY = body.style.top;
     body.style.position = '';
@@ -98,13 +98,13 @@ $(document).ready(function () {
 
   $(document).keyup(function (e) {
     if (e.key === "Escape" || e.keyCode === 27) {
-      closeModal()
+      closeModal(event)
     }
   });
 
   $(".modal__overlay").click(function (e) {
     if ($(e.target).closest(".modal__block").length == 0)
-      closeModal();
+      closeModal(event);
 
   });
 
